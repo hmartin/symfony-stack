@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{% block title %}Welcome!{% endblock %}</title>
+    {% block stylesheets %}
+        {{ encore_entry_link_tags('app') }}
+    {% endblock %}
+</head>
+<body class="text-center">
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="masthead mb-auto">
+        <div class="inner">
+            <h3 class="masthead-brand"><a href="{{ path('homepage') }}">Cover</a>!</h3>
+            <nav class="nav nav-masthead justify-content-center">
+                <a class="nav-link active" href="#">{{ 'home.home'|trans }}</a>
+                <a class="nav-link" href="#">{{ 'home.whoWeAre'|trans }}</a>
+                <a class="nav-link" href="#">{{ 'home.faq'|trans }}</a>
+                <a class="nav-link" href="#">{{ 'home.contact'|trans }}</a>
+            </nav>
+        </div>
+    </header>
+
+    {% block body %}{% endblock %}
+    <footer class="mastfoot mt-auto">
+        <div class="inner">
+            <p><a href="https://getbootstrap.com/">{{ 'home.legalMentions'|trans }}</a> - <a
+                        href="{{ path('easyadmin') }}">{{ 'home.proSpace'|trans }}</a>.</p>
+        </div>
+    </footer>
+</div>
+
+{% block javascripts %}
+    {{ encore_entry_script_tags('app') }}
+{% endblock %}
+</body>
+</html>

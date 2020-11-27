@@ -1,0 +1,16 @@
+home:
+  title: 'Votre adresse'
+  placeholder: 'Ex: 1 rue de la paix, paris'
+  submit: 'C''est parti!'
+  home: Acceuil
+  whoWeAre: Qui sommes nous?
+  faq: Questions fréquentes
+  contact: Contact
+  legalMentions: Mentions légales
+  proSpace: Espace pro
+
+
+morning: matin
+afternoon: après-midi
+
+
