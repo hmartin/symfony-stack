@@ -10,8 +10,7 @@ Bootstrap (yarn)<br>
 ## First installation
 ```
 docker-composer up
-# In new terminal with the good docker image name (depend on your directory: "docker ps" to see it)
-docker exec *_php bash
+docker-compose exec php bash
 composer install
 composer init-stack
 ```
