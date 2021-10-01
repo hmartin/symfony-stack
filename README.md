@@ -9,7 +9,7 @@ Bootstrap (yarn)<br>
 
 ## First installation
 ```
-docker-composer up
+docker-compose up
 docker-compose exec php bash
 composer install
 composer init-stack
